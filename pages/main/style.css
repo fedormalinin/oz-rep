@@ -1,0 +1,177 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    border: solid 2px  red;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #FFFFFF;
+    padding: 3.55px 4.75px;
+}
+
+.logo-title {
+    border: solid 1px white;
+    background-image: url(../../assets/images/bamboo.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+}
+
+.nav {
+    position: absolute;
+
+    background-color:rgb(0, 0, 0);
+    width: 100%;
+}
+
+.intro {
+    background: url(../../assets/images/GiantPanda.jpg) no-repeat;
+    background-size: cover;
+    height: 48.75rem;
+}
+
+.nav-items {
+    display: flex;
+    gap: 3.625rem;
+}
+
+.nav-item {
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+.nav-item:hover {
+    color: #FE9013;
+}
+
+.about-style {
+    color: #FE9013;
+    cursor: default;
+}
+
+
+
+.logo_and_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designed {
+    color: white;
+}
+
+.designed-style {
+    text-decoration:none;
+    color:white;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.circle {
+    position: relative;
+    height: 29.063rem;
+    width: 29.063rem;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+    top: 92px;
+    left: 50%;
+}
+
+.intro-title {
+    position: absolute;
+    top: 4.625rem;
+    left: 4.625rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.594rem;
+    line-height: 75%;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.button {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 1.563rem;
+    border-style:none;
+    padding: 1rem 5.5rem;
+}
+
+.button-intro-style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+
+    text-transform: uppercase;
+
+    color:white;
+}
+
+.button-intro-pos {
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+
+    padding-bottom: 100px;
+}
+
