@@ -128,7 +128,7 @@ h1 {
     transform: scale(1.2);
 }
 
-.about-style {
+.nav-item.active {
     color: #FE9013;
     cursor: default;
 }
@@ -778,6 +778,10 @@ input,select,textarea {
     width: 1.625rem;
     height: 1.625rem;
     padding: 2px 2.375rem;
+}
+
+.icon:hover {
+    transform:scale(1.1)
 }
 
 .icon_fb {
