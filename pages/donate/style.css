@@ -13,6 +13,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    padding: 0;
 }
 
 ul, li {
@@ -33,6 +34,10 @@ header {
     margin: 0 auto;
 }
 
+.logo_link-footer2 {
+    display: none;
+}
+
 h1 {
     font-weight: 400;
     font-size: 19.0145px;
@@ -42,6 +47,16 @@ h1 {
 
     color: #FFFFFF;
     padding: 3.55px 4.75px;
+}
+
+.burger {
+    display: none;
+}
+
+.button-burger-menu {
+    width: 25px;
+    height: 25px;
+    background: url(../../assets/icons/burger_menu.png) no-repeat;
 }
 
 .logo-title {
@@ -79,7 +94,7 @@ h1 {
     background: url(../../assets/images/GiantPanda.jpg) no-repeat;
     background-size: cover;
 
-    height: 29rem;
+    height: 24.375vw;
 
     z-index: 0;
 }
@@ -102,7 +117,6 @@ h1 {
 
 .nav-items {
     display: flex;
-    gap: 3.625rem;
 }
 
 .nav-item {
@@ -119,6 +133,8 @@ h1 {
     line-height: 140%;
 
     left: 20px;
+
+    margin-right: 48px;
 }
 
 .nav-item:hover {
@@ -227,7 +243,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 48px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -422,18 +438,9 @@ h2 {
 /* PICK AND FEED BLOCK */
 /* PICK AND FEED BLOCK */
 
-.content-container {
-    padding: 40px 100px 60px 100px
-}
 
-.pickandfeed {
-    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-    opacity: 0.9;
 
-    padding: 4.313rem 4.313rem 6.313rem 4.313rem;
 
-    margin-bottom: 9rem;
-}
 
 .block-pickandfeed {
     background: rgba(253, 253, 255, 0.5);
@@ -442,6 +449,16 @@ h2 {
 
     width: 100%;
 
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 40px 100px 60px 100px;
+
+    
     text-align: center;
 }
 
@@ -975,7 +992,7 @@ input[type="radio"] {
   }
 
   input[type="radio"]:checked {
-    border: 6px solid rgb(255, 0, 0);
+    border: 6px solid rgb(255, 187, 0);
   }
 
 .choice-amount {
@@ -993,3 +1010,372 @@ input[type="radio"] {
 .btn-feed {
     margin-bottom: 1.875rem;
 }
+
+.media-item_icon_solo {
+    display: none;
+}
+
+
+/* =======MEDIA 1599=================================================== */
+
+
+@media (max-width: 1000px) {
+    
+
+
+.container {
+    max-width: 940px;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+.nav {
+    position: static;
+}
+
+.nav-item {
+    margin-right: 48px;
+}
+
+.logo {
+    margin: 13px 0 13px 0;
+}
+
+.intro {
+    height: 39vw;
+    background-size: cover;
+    background-position: top;
+}
+
+
+.donate-title-style {
+    font-size: 36px;
+    line-height: 130%;
+
+    margin-bottom: 30px;
+}
+
+.article {
+    font-size: 16px;
+    line-height: 140%;
+
+    margin-bottom: 45px;
+}
+
+.donate-info {
+    margin-bottom: 4vw;
+}
+
+.content-container {
+    padding: 20px 40px 10px 40px;
+}
+
+.pickandfeed-title-style {
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.pickandfeed-style-01 {
+
+    font-size: 24px;
+    line-height: 120%;
+
+    margin: 10px 2px 55px 2px;
+}
+
+.pickandfeed-style-02 {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #333B41;
+
+    text-align: left;
+}
+
+.pickandfeed-style-03 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 130%;
+    color: #333B41;
+
+    text-align: left;
+
+    margin-bottom: 0;
+}
+
+.pickandfeed-style-04 {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 100%;
+
+    color: #333B41;
+
+    padding-bottom: 0;
+}
+
+
+
+
+.main-wrapper {
+    height: fit-content;
+    background: 
+    linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%);
+    padding: 2.5rem 0 3vw 0;
+}
+
+
+
+
+
+.main-donate-block .container {
+    box-sizing: border-box;
+} 
+
+
+.media-item {
+    margin-bottom: 0.5vw;
+}
+
+.footer-container {
+    margin: 0 32px 36px 0;
+}
+
+.e-mail {
+margin-right: 0.625rem;
+margin-top: 1.5vw;
+
+padding: 1.2vw 4.7vw 1.2vw 1vw;
+}
+
+.btn-submit-style {
+color:#BDBDBD;
+}
+
+input[type="email"]::placeholder {
+font-size: 16px;
+line-height: 140%;
+color: #BDBDBD;
+}
+
+.nav-items-footer {
+    margin: 0 0 7px 97px;
+}
+
+}
+
+@media (max-width: 640px) {
+
+    .container {
+        max-width: 600px;
+    }
+
+.intro {
+    height: 57.65625vw;
+}
+
+    .burger {
+        display: block;
+        right: 0;
+        top:30%;
+        transform: translate(-50%);
+        position: absolute;
+        z-index: 51;
+    }
+
+    .main-wrapper {
+        padding: 5vw 0 3vw 0;
+    }
+
+    .nav {
+        position: fixed;
+    }
+
+    .nav-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: flex-start;
+    }
+
+    .logo_and_nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        display: none;
+    }
+    .designed {
+        display: none;
+        color: white;
+    }
+    .logo-title {
+        border: none;
+        background: url(../../assets/images/bamboo.svg);
+        background-repeat: no-repeat;
+        background-position: 10px 20px;
+        background-size: 5px 5px;
+    
+        padding: 2.8px 0;
+    }
+    
+    h1 {
+        font-weight: 400;
+        font-size: 12.29px;
+        line-height: 120%;
+    
+        text-align: center;
+    
+        color: #FFFFFF;
+    
+    }
+
+    .logo {
+        margin: 0;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+.donate-title-style {
+    font-size: 24px;
+    line-height: 120%;
+
+    margin-bottom: 17px;
+}
+        
+.article {
+    font-size: 16px;
+    line-height: 140%;
+
+    margin-bottom: 30px;
+}
+        
+.donate-info {
+    font-size: 36px;
+    line-height: 130%;
+
+    margin-bottom: 30px;
+}
+
+
+    
+.contacts {
+    display: none;
+}
+
+.footer__padding {
+    margin: 0 0 0 5px;
+}
+
+.media-item {
+    margin-bottom: 5px;
+}
+
+.footer-container {
+        margin: 0 32px 0 0;
+}
+
+.logo-footer {
+    font-weight: 300;
+
+    border: solid 1px white;
+    background-image: url(../../assets/images/bamboo.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+
+    width: fit-content;
+    filter: invert(1);
+}
+
+.logo-footer:hover {
+    color: orange;
+}
+
+.logo-footer-container {
+    padding: 10px 0 0 0;
+}
+
+.subscribe {
+    font-weight: 300;
+    font-size: 1.5rem;
+
+    color: #FFFFFF;
+}
+
+.footer-container {
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+}
+
+.footer {
+    position: relative;
+}
+
+.media {
+    position: absolute;
+    top: 2vw;
+    right: 3.125vw;
+}
+
+.media-item {
+    display: none;
+
+}
+
+.media-item_icon_solo {
+    display: block;
+    margin-bottom: 3.125vw;
+}
+
+.icon {
+    width: 1.625rem;
+    height: 1.625rem;
+    padding: 0 0;
+}
+
+.btn-donate {
+    margin-bottom: 67px;
+}
+
+.nav-items-footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 0;
+}
+
+.nav-item {
+    margin-right: 0px;
+}
+
+.nav-items > *:not(:last-child) {
+    margin: 0 5.78125vw 0 0;
+}
+
+.footer_designed_style {
+    margin: 0 0 5px 0;
+}
+
+.footer-container2 {
+    padding-bottom: 0;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+

@@ -14,17 +14,15 @@
 </head>
 <body>
 
-
     <div class="wrapper">
         <header class="header">
             <div class="nav">
                 <div class="container">
                     <div class="nav-links nav-block">
                         <div class="logo_and_nav">
-                            <a class="logo_link" href="../../pages/main/index.html">
                             <div class="logo">
-                                <div class="logo-title"><h1>PetStory<br>online</h1></div>
-                            </div></a>
+                                <div><h1><a class="logo_link logo-title" href="../../pages/main/index.html">PetStory<br>online</a></h1></div>
+                            </div>
                             <ul class="nav-items">
                                 <li><a class="nav-item active" href="../../pages/main/index.html">About</a></li>
                                 <li><a class="nav-item" href="#">Map</a></li>
@@ -33,12 +31,14 @@
                                 <li><a class="nav-item" href="#">Contact us</a></li>
                             </ul>
                         </div>
-                        <div class="designed">
+                        <div class="designed active">
                             <a class="designed-style" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a>
                         </div>
                     </div>
-                    <div class="burger">
-                        <div class="button-burger-menu"></div>
+                    <div class="burger-block">
+                        <div class="burger-block__button"></div>
+                        <div class="burger-block__burger-menu"></div>
+                        <div class="burger-shadow"></div>
                     </div>
                 </div>
             </div>
@@ -315,7 +315,7 @@
                         <input class="e-mail" type="email" placeholder="Enter your email"><button class="button-submit"><div class="btn-submit-style">Submit</div></button>
                     </div>
                 </div>
-                <div class="btn-donate"><a href="./pages/donate/index.html"><button class="button square-border button-footer-pad"><span class="button-style">Donate for volunteers</span></button></a></div>
+                <div class="btn-donate"><a href="../../pages/donate/index.html"><button class="button square-border button-footer-pad"><span class="button-style">Donate for volunteers</span></button></a></div>
                 <div class="footer-container2">
                     <div class="media">
                         <div class="media-item"><a href="facebook.com" class="media-style"><div class="icon icon_fb">Facebook</div></a></div>
@@ -329,11 +329,11 @@
                         <div class="media-item_icon_solo"><a href="youtube.com" class="media-style"><div class="icon icon_youtube"></div></a></div>
                     </div>
                 <div class="footer-nav">
-                    <ul class="nav-items nav-items-footer">
-                        <li><a class="nav-item nav-item-footer active" href="./pages/main/index.html">About</a></li>
-                        <li><a class="nav-item nav-item-footer" href="#">Map</a></li>
-                        <li><a class="nav-item nav-item-footer" href="#">Zoos</a></li>
-                        <li><a class="nav-item nav-item-footer" href="#">Contact us</a></li>
+                    <ul class="nav-items-footer">
+                        <li><a class="nav-item-footer active" href="./pages/main/index.html">About</a></li>
+                        <li><a class="nav-item-footer" href="#">Map</a></li>
+                        <li><a class="nav-item-footer" href="#">Zoos</a></li>
+                        <li><a class="nav-item-footer" href="#">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="designedby">
@@ -344,5 +344,6 @@
             </div>
         </footer>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
