@@ -42,7 +42,6 @@ header {
 /* ------LOGO-NAV----------------------------------------------- */
 
 .logo-title {
-
     background-image: url(../../assets/images/bamboo.svg);
     background-repeat: no-repeat;
     background-position: 10px 20px;
@@ -57,7 +56,6 @@ header {
     text-align: center;
 
     color: #FFFFFF;
-
 }
 
 
@@ -924,7 +922,7 @@ h2 {
 }
 
 input::placeholder {
-    color: orange;
+    color: #BDBDBD;
 }
 
 input,select,textarea {
@@ -1034,7 +1032,7 @@ input,select,textarea {
 .nav-items-footer {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 0 70px;
+    margin: 0 0 10px 90px;
 }
 
 .nav-item-footer {
@@ -1049,6 +1047,8 @@ input,select,textarea {
     font-weight: 500;
     font-size: 1rem;
     line-height: 140%;
+
+    margin: 0 0 0 58px;
 }
 
 .nav-item-footer:hover {
@@ -1482,7 +1482,7 @@ input::placeholder {
 }
 
     .nav-items-footer {
-        margin: 0 0 7px 97px;
+        margin: 0 0 7px 50px;
     }
 }
 
@@ -1678,7 +1678,7 @@ input::placeholder {
         display: none;
         flex-direction: column;
 
-        margin-top: 12.8125vw;
+        margin-top: 82px;
         z-index: 53;
     }
 
@@ -1698,16 +1698,6 @@ input::placeholder {
         margin: 0 0 15px 0;
     }
 
-    .nav-items:after {
-        content: 'Designed by ©';
-        margin-top: 15px;
-
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 140%;
-
-        cursor: pointer;
-    }
 
     .designed {
         display: none;
@@ -2188,6 +2178,10 @@ input::placeholder {
     margin-bottom: 67px;
 }
 
+.nav-item-footer {
+    margin: 0 36px 0 0;
+}
+
 .nav-items-footer {
     display: flex;
     flex-direction: row;
@@ -2215,11 +2209,11 @@ input::placeholder {
     }
 
     .nav {
-        position: fixed;
+        position: static;
     }
 
     .intro {
-        height: 58.125vw;
+        height: 58.153vw;
     }
 
     .button-intro-pos {
@@ -2240,7 +2234,7 @@ input::placeholder {
 
         right: 0;
         top:0;
-        transform: translate(-35%, -5%);
+        transform: translate(-5%, 0);
     }
 
     .burger-block__button.active {
@@ -2596,8 +2590,18 @@ display: none;
     position: absolute;
     bottom: 17px;
     left: 20px;
+}
 
+.nav-items-footer {
+    margin: 0 0 0px 0px;
+}
 
+.nav-item-footer {
+    margin: 0 0 0 0;
+}
+
+.nav-items-footer > li:not(:last-child) {
+    margin: 0 30px 0 0px;
 }
 
 }

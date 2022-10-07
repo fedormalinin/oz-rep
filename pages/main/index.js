@@ -6,6 +6,8 @@ const logoLink = document.querySelector('.logo_link');
 const logo = document.querySelector('.logo');
 const burgerShadow = document.querySelector('.burger-shadow');
 
+const extraLi = document.createElement('li')
+
 const toggleMenu = () => {
     if(burgerMenu.classList.contains('active')) {
         navItems.classList.remove('active')
@@ -15,6 +17,11 @@ const toggleMenu = () => {
         navItem.classList.remove('nav-item_black')
         burgerMenu.classList.remove('active')
         burgerBtn.classList.remove('active');
+
+        // delete DesignBy
+        if (document.querySelectorAll('.nav-item').length>5) {
+            navItems.removeChild(navItems.lastChild)
+        }
     } else {
     navItems.classList.add('active');
     logoLink.classList.add('logo_burger');
@@ -23,8 +30,13 @@ const toggleMenu = () => {
     navItem.classList.add('nav-item_black');
     burgerMenu.classList.add('active');
     burgerBtn.classList.add('active');
+
+    // add DesignBy
+    navItems.innerHTML += `<li><a class="nav-item" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a></li>`
 }
 };
+
+
 
 
 burgerBtn.addEventListener('click', toggleMenu);
