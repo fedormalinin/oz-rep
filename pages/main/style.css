@@ -346,10 +346,13 @@ h2 {
 .fav-line {
     display: flex;
     justify-content: center;
+
+    margin-bottom: 20px;
 }
 
 .fav-lines_container {
     position: relative;
+
 
     margin-bottom: 4vw;
 }
@@ -371,18 +374,21 @@ h2 {
 
 .btn-prev {
     position: absolute;
-    left: -7%;
-    bottom: 48%;
+    
+    left: 0;
+    top: 0;
 }
 
 .btn-next {
     position: absolute;
-    right: -7%;
-    bottom: 48%;
+
+    right: 0;
+    top: 0;
 }
 
 .prev-arrow-transform {
     position: relative;
+    
     top: 35%;
     left: 35%;
 }
@@ -521,6 +527,8 @@ h2 {
 
 
 .yourfav {
+    position: relative;
+
     background: url(../../assets/images/palm_foto.png) -83% 100%, url(../../assets/images/strelitzia.png) 100% 100%;
     background-repeat: no-repeat;
 
@@ -838,7 +846,7 @@ h2 {
   }
   
   input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     height: 6px;
     border-radius: 5px;
     background: #FE9013;
@@ -1142,6 +1150,8 @@ input,select,textarea {
     }
 
     .slider-btn-container {
+        position: absolute;
+
         display: flex;
         justify-content: center;
 
@@ -1427,7 +1437,7 @@ input,select,textarea {
   }
   
   input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     height: 6px;
     border-radius: 5px;
     background: #FE9013;
@@ -2522,6 +2532,9 @@ display: none;
 }
 
 
+
+
+/* FOOTER 320 */
 .media-item_icon_solo {
     display: block;
     margin-bottom: 0;
@@ -2561,6 +2574,8 @@ display: none;
     background-image: url(../../assets/images/bamboo.svg);
     background-repeat: no-repeat;
     background-position: 75px 0px;
+
+    border: none;
 }
 
 .footer-container {
