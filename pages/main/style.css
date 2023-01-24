@@ -32,49 +32,41 @@ header {
     z-index: 2;
 }
 
-/* =========START======================================================== */
-
-
 .container {
     max-width: 1160px;
     margin: 0 auto;
 }
-/* ------LOGO-NAV----------------------------------------------- */
 
-.logo-title {
-    background-image: url(../../assets/images/bamboo.svg);
-    background-repeat: no-repeat;
-    background-position: 10px 20px;
-
-    display: inline-block;
-    padding: 2.8px 4.75px;
-
+h1 {
     font-weight: 400;
-    font-size: 19px;
+    font-size: 19.0145px;
     line-height: 120%;
 
     text-align: center;
 
     color: #FFFFFF;
+
+}
+
+/* ------LOGO-NAV----------------------------------------------- */
+
+.logo-title {
+    border: solid 1px white;
+    background-image: url(../../assets/images/bamboo.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+
+    padding: 2.8px 4.75px;
 }
 
 
 .logo {
     margin: 14px 63px 14px 0;
     cursor: pointer;
-
-    border: solid 1px white;
-
 }
 
 .logo:hover {
-    border: solid 1px orange;
-
-    
-}
-
-.logo-title:hover {
-    color: orange;
+    background-color: rgba(250, 111, 50, 0.3);
 }
 
 .logo_link {
@@ -164,11 +156,15 @@ header {
     align-items: center;
 }
 
-.burger-block {
+.burger {
     display: none;
 }
 
-
+.button-burger-menu {
+    width: 25px;
+    height: 25px;
+    background: url(../../assets/icons/burger_menu.png) no-repeat;
+}
 
 /* ------------INTRO----------------------------------------------------- */
 
@@ -341,18 +337,15 @@ h2 {
 
 
 
-/* ----------------FAVORITE--1600----------------------------------------------- */
+/* ----------------FAVORITE------------------------------------------------- */
 
 .fav-line {
     display: flex;
     justify-content: center;
-
-    margin-bottom: 20px;
 }
 
 .fav-lines_container {
     position: relative;
-
 
     margin-bottom: 4vw;
 }
@@ -374,21 +367,18 @@ h2 {
 
 .btn-prev {
     position: absolute;
-    
-    left: 0;
-    top: 0;
+    left: -7%;
+    bottom: 48%;
 }
 
 .btn-next {
     position: absolute;
-
-    right: 0;
-    top: 0;
+    right: -7%;
+    bottom: 48%;
 }
 
 .prev-arrow-transform {
     position: relative;
-    
     top: 35%;
     left: 35%;
 }
@@ -527,8 +517,6 @@ h2 {
 
 
 .yourfav {
-    position: relative;
-
     background: url(../../assets/images/palm_foto.png) -83% 100%, url(../../assets/images/strelitzia.png) 100% 100%;
     background-repeat: no-repeat;
 
@@ -846,7 +834,7 @@ h2 {
   }
   
   input[type=range]::-webkit-slider-thumb {
-    appearance: none;
+    -webkit-appearance: none;
     height: 6px;
     border-radius: 5px;
     background: #FE9013;
@@ -930,7 +918,7 @@ h2 {
 }
 
 input::placeholder {
-    color: #BDBDBD;
+    color: orange;
 }
 
 input,select,textarea {
@@ -1038,38 +1026,8 @@ input,select,textarea {
 }
 
 .nav-items-footer {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 10px 90px;
+    margin: 0 0 0 70px;
 }
-
-.nav-item-footer {
-    position: relative;
-
-    color: white;
-
-    text-decoration: none;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 140%;
-
-    margin: 0 0 0 58px;
-}
-
-.nav-item-footer:hover {
-    color: #FE9013;
-    transform: scale(1.2);
-}
-
-.nav-item-footer.active {
-    color: #FE9013;
-    cursor: default;
-}
-
-
 
 .button-footer-pad {
     padding: 1rem 3.2rem;
@@ -1150,8 +1108,6 @@ input,select,textarea {
     }
 
     .slider-btn-container {
-        position: absolute;
-
         display: flex;
         justify-content: center;
 
@@ -1437,7 +1393,7 @@ input,select,textarea {
   }
   
   input[type=range]::-webkit-slider-thumb {
-    appearance: none;
+    -webkit-appearance: none;
     height: 6px;
     border-radius: 5px;
     background: #FE9013;
@@ -1492,7 +1448,7 @@ input::placeholder {
 }
 
     .nav-items-footer {
-        margin: 0 0 7px 50px;
+        margin: 0 0 7px 97px;
     }
 }
 
@@ -1551,6 +1507,17 @@ input::placeholder {
       .section-friend__item:not(:last-child) {
         margin-right: 6.56vw;
       }
+      .section-friend__item:not(:last-child)::after {
+        content: "";
+        z-index: 10;
+        width: 13.13vw;
+        height: 10.63vw;
+        right: -8.6vw;
+        top: -2.66vw;
+        background-image: url(../assets/img/svg/feed-arrow-sm);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
       .section-friend__item p {
         margin-top: 4.69vw;
       }
@@ -1586,87 +1553,16 @@ input::placeholder {
         max-width: 600px;
     }
 
-/* ===========BURGER MENU==640==START====================================================== */
 
-    .burger-block {
+
+    .burger {
         display: block;
-    }
-    
-
-
-    .burger-block__button {
-        width: 35px;
-        height: 35px;
-        background: url(../../assets/icons/burger_menu.png) no-repeat;
-
         right: 0;
-        top:0;
-        transform: translate(-35%, -5%);
-
+        top:30%;
+        transform: translate(-50%);
         position: absolute;
-        background-position: center;
-
         z-index: 51;
-
-        transition-duration: 0.1s;
     }
-
-    .burger-block__button.active {
-        filter: invert();
-        background: url(../../assets/icons/active_menu.png) no-repeat;
-        background-position: center;
-
-        transition-duration: 0.1s;
-    }
-
-    .burger-block__burger-menu {
-        display: none;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: white;
-        width: 100%;
-        height: 329px;
-
-        z-index: 50;
-
-        transition-duration: 1s;
-    }
-
-    .burger-block__burger-menu.active {
-        display: block;
-
-        transition-duration: 1s;
-    }
-
-    .burger-shadow {
-        display: none;
-    }
-
-
-
-    .burger-shadow.active {
-        display: block;
-
-        transition-duration: 0.5s;
-    }
-
-    .burger-shadow:before {
-        content: '';
-        position: absolute;
-        top:0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        height: 100vh;
-
-        z-index: 49;
-    }
-
-
-
-/* ===========BURGER MENU==640=END====================================================== */
 
     .nav {
         position: fixed;
@@ -1685,55 +1581,21 @@ input::placeholder {
     }
 
     .nav-items {
-        display: none;
         flex-direction: column;
-
-        margin-top: 82px;
-        z-index: 53;
+        display: none;
     }
-
-    .nav-items.active {
-        display: flex;
-    }
-
-    .nav-item {
-        color: black;
-    }
-
-    .nav-item_black {
-        color: black;
-    }
-
-    .nav-items > *:not(:last-child) {
-        margin: 0 0 15px 0;
-    }
-
-
     .designed {
         display: none;
         color: white;
     }
-    
     .logo-title {
         border: none;
-
-        background-position: 8px 17px;
-        background-size: 5px;
+        background: url(../../assets/images/bamboo.svg);
+        background-repeat: no-repeat;
+        background-position: 10px 20px;
+        background-size: 5px 5px;
     
-        padding: 2.8px 3.8px;
-    
-        font-size: 12.30px;
-        line-height: 120%;
-        font-weight: 400;
-    
-        color: #FFFFFF;
-    }
-
-    .logo-title.logo_burger {
-        color: #FE9013;
-
-        left: 0;
-        z-index: 55;
+        padding: 2.8px 0;
     }
     
     h1 {
@@ -1749,15 +1611,7 @@ input::placeholder {
 
     .logo {
         margin: 0;
-        border: none;
-    }
-
-    .logo.logo_border {
-        position: absolute;
-        top: 12.84px;
-        left: 13.8px;
-        border: solid 1px #FE9013;
-        z-index: 51;
+        cursor: pointer;
     }
 
     .circle {
@@ -1816,6 +1670,8 @@ input::placeholder {
         line-height: 120%;
         color: #333B41;
         max-width: 82%;
+
+
     }
     
     .the_site {
@@ -2188,14 +2044,14 @@ input::placeholder {
     margin-bottom: 67px;
 }
 
-.nav-item-footer {
-    margin: 0 36px 0 0;
-}
-
 .nav-items-footer {
     display: flex;
     flex-direction: row;
     margin: 0 0 0 0;
+}
+
+.nav-items > *:not(:last-child) {
+    margin: 0 5.78125vw 0 0;
 }
 
 .footer_designed_style {
@@ -2218,12 +2074,21 @@ input::placeholder {
         padding: 0 10px;
     }
 
+    .burger {
+        display: block;
+        right: 0;
+        top: 2%;
+        transform: translate(-10%);
+        position: absolute;
+        z-index: 51;
+    }
+
     .nav {
         position: static;
     }
 
     .intro {
-        height: 58.153vw;
+        height: 58.125vw;
     }
 
     .button-intro-pos {
@@ -2236,31 +2101,6 @@ input::placeholder {
         position: static;
 
         margin-bottom: 9.375vw;
-    }
-
-    .burger-block__button {
-        width: 35px;
-        height: 35px;
-
-        right: 0;
-        top:0;
-        transform: translate(-5%, 0);
-    }
-
-    .burger-block__button.active {
-        filter: invert();
-    }
-
-    .nav-item > *:not(:last-child) {
-        margin: 0 0 15px 0;
-    }
-
-    .nav-items {
-        margin-top: 25.625vw;
-    }
-
-    .burger-block__burger-menu {
-    height: 102.8125vw;
     }
 
     .button-intro {
@@ -2532,9 +2372,6 @@ display: none;
 }
 
 
-
-
-/* FOOTER 320 */
 .media-item_icon_solo {
     display: block;
     margin-bottom: 0;
@@ -2574,8 +2411,6 @@ display: none;
     background-image: url(../../assets/images/bamboo.svg);
     background-repeat: no-repeat;
     background-position: 75px 0px;
-
-    border: none;
 }
 
 .footer-container {
@@ -2605,18 +2440,12 @@ display: none;
     position: absolute;
     bottom: 17px;
     left: 20px;
+
+
 }
 
-.nav-items-footer {
-    margin: 0 0 0px 0px;
-}
-
-.nav-item-footer {
-    margin: 0 0 0 0;
-}
-
-.nav-items-footer > li:not(:last-child) {
-    margin: 0 30px 0 0px;
+.nav-items > *:not(:last-child) {
+    margin: 0 30px 0 0;
 }
 
 }
