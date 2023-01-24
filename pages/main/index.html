@@ -14,17 +14,15 @@
 </head>
 <body>
 
-
     <div class="wrapper">
         <header class="header">
             <div class="nav">
                 <div class="container">
                     <div class="nav-links nav-block">
                         <div class="logo_and_nav">
-                            <a class="logo_link" href="../../pages/main/index.html">
                             <div class="logo">
-                                <div class="logo-title"><h1>PetStory<br>online</h1></div>
-                            </div></a>
+                                <div><h1><a class="logo_link logo-title" href="../../pages/main/index.html">PetStory<br>online</a></h1></div>
+                            </div>
                             <ul class="nav-items">
                                 <li><a class="nav-item active" href="../../pages/main/index.html">About</a></li>
                                 <li><a class="nav-item" href="#">Map</a></li>
@@ -33,12 +31,14 @@
                                 <li><a class="nav-item" href="#">Contact us</a></li>
                             </ul>
                         </div>
-                        <div class="designed">
+                        <div class="designed active">
                             <a class="designed-style" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed by ©</a>
                         </div>
                     </div>
-                    <div class="burger">
-                        <div class="button-burger-menu"></div>
+                    <div class="burger-block">
+                        <div class="burger-block__button"></div>
+                        <div class="burger-block__burger-menu"></div>
+                        <div class="burger-shadow"></div>
                     </div>
                 </div>
             </div>
@@ -76,10 +76,12 @@
             </section>
 
             <section class="yourfav">
-                <div class="container">
-                    <div class="fav-lines_container">
+                <div class="your-fav-container-btn-slider">
+                    <div class="btn-slide btn-prev" onclick="moveLeft()"><img class="prev-arrow-transform" src="../../assets/images/Vector.svg" alt="prev"></div>
+                    <div class="btn-slide btn-next" onclick="moveRight()"><img class="next-arrow-transform" src="../../assets/images/Vector.svg" alt="next"></div>
+                <div class="pets-wrap">
+                    <div class="container fav-lines_container">
                         <div class="fav-line">
-
                             <div class="pets-slider-item banana-icon">
                                 <div class="slider__photo__item">
                                     <img class="slider__photo" src="../../assets/images/giantpandas.jpg" alt="giantpandas">
@@ -88,7 +90,7 @@
                                         <p>Here we have a giant panda living on the shores of the Romanian Gulf</p>
                                     </div>
                                 </div>
-                                <div class="fav-title">Giant Pandas<br></div>
+                                <div class="fav-title">Giant Pandas 1<br></div>
                                 <div class="fav-description">Native to Southwest China</div>
                             </div>
 
@@ -127,10 +129,6 @@
                                 <div class="fav-title">Two-toes sloth<br></div>
                                 <div class="fav-description">Mesoamerica, South America</div>
                             </div>
-                        </div>
-                        <div class="slider-btn-container"> 
-                            <div class="btn-slide btn-prev"><img class="prev-arrow-transform" src="../../assets/images/Vector.svg" alt="prev"></div>
-                            <div class="btn-slide btn-next"><img class="next-arrow-transform" src="../../assets/images/Vector.svg" alt="next"></div>
                         </div>
                         <div class="fav-line">
 
@@ -171,8 +169,191 @@
                             </div>
                         </div>
                     </div>
-                    <div class="btn-choose-container"><button class="button btn-choose"><span class="button-style">Choose Your Favorite</span></button></div>
-                </div>
+
+                    <div class="container fav-lines_container">
+                        <div class="fav-line">
+                            <div class="pets-slider-item banana-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/giantpandas.jpg" alt="giantpandas">
+                                    <div class="slider__photo__item__text">
+                                        <h4>The giant panda</h4>
+                                        <p>Here we have a giant panda living on the shores of the Romanian Gulf</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Giant Pandas 2<br></div>
+                                <div class="fav-description">Native to Southwest China</div>
+                            </div>
+
+                            <div class="pets-slider-item meet-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/eagles.jpg" alt="eagles">
+                                    <div class="slider__photo__item__text">
+                                        <h4>Eagles</h4>
+                                        <p>Here we have Eagles living in South America</p>
+                                    </div>
+                                    </div>
+                                <div class="fav-title">Eagles<br></div>
+                                <div class="fav-description">Native to South America</div>
+                            </div>
+
+                            <div class="pets-slider-item banana-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/gorillas.jpg" alt="gorillas">
+                                    <div class="slider__photo__item__text">
+                                        <h4>Gorillas</h4>
+                                        <p>Here we have Gorillas living in Congo</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Gorillas<br></div>
+                                <div class="fav-description">Native to Congo</div>
+                            </div>
+
+                            <div class="pets-slider-item banana-icon extra-item">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/twotoedsloth.jpg" alt="twotoedsloth">
+                                    <div class="slider__photo__item__text">
+                                        <h4>Two-toed Sloth</h4>
+                                        <p>Here we have Two-toed Sloth living in South America</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Two-toes sloth<br></div>
+                                <div class="fav-description">Mesoamerica, South America</div>
+                            </div>
+                        </div>
+                        <div class="fav-line">
+
+                            <div class="pets-slider-item banana-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/twotoedsloth.jpg" alt="twotoedsloth">
+                                    <div class="slider__photo__item__text">
+                                        <h4>Two-toed Sloth</h4>
+                                        <p>Here we have Two-toed Sloth living in South America</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Two-toes sloth<br></div>
+                                <div class="fav-description">Mesoamerica, South America</div>
+                            </div>
+
+                            <div class="pets-slider-item meet-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/cheetahs.jpg" alt="cheetahs">
+                                    <div class="slider__photo__item__text">
+                                        <h4>The cheetahs</h4>
+                                        <p>Here we have cheetahs living in Africa</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Cheetahs<br></div>
+                                <div class="fav-description">Native to Africa</div>
+                            </div>
+
+                            <div class="pets-slider-item meet-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/penguins.jpg" alt="penguins">
+                                    <div class="slider__photo__item__text">
+                                        <h4>The Penguins</h4>
+                                        <p>Here we have Penguins living in Antarctica</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Penguins<br></div>
+                                <div class="fav-description">Native to Antarctica</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container fav-lines_container">
+                        <div class="fav-line">
+                            <div class="pets-slider-item banana-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/giantpandas.jpg" alt="giantpandas">
+                                    <div class="slider__photo__item__text">
+                                        <h4>The giant panda</h4>
+                                        <p>Here we have a giant panda living on the shores of the Romanian Gulf</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Giant Pandas 3<br></div>
+                                <div class="fav-description">Native to Southwest China</div>
+                            </div>
+
+                            <div class="pets-slider-item meet-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/eagles.jpg" alt="eagles">
+                                    <div class="slider__photo__item__text">
+                                        <h4>Eagles</h4>
+                                        <p>Here we have Eagles living in South America</p>
+                                    </div>
+                                    </div>
+                                <div class="fav-title">Eagles<br></div>
+                                <div class="fav-description">Native to South America</div>
+                            </div>
+
+                            <div class="pets-slider-item banana-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/gorillas.jpg" alt="gorillas">
+                                    <div class="slider__photo__item__text">
+                                        <h4>Gorillas</h4>
+                                        <p>Here we have Gorillas living in Congo</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Gorillas<br></div>
+                                <div class="fav-description">Native to Congo</div>
+                            </div>
+
+                            <div class="pets-slider-item banana-icon extra-item">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/twotoedsloth.jpg" alt="twotoedsloth">
+                                    <div class="slider__photo__item__text">
+                                        <h4>Two-toed Sloth</h4>
+                                        <p>Here we have Two-toed Sloth living in South America</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Two-toes sloth<br></div>
+                                <div class="fav-description">Mesoamerica, South America</div>
+                            </div>
+                        </div>
+                        <div class="fav-line">
+
+                            <div class="pets-slider-item banana-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/twotoedsloth.jpg" alt="twotoedsloth">
+                                    <div class="slider__photo__item__text">
+                                        <h4>Two-toed Sloth</h4>
+                                        <p>Here we have Two-toed Sloth living in South America</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Two-toes sloth<br></div>
+                                <div class="fav-description">Mesoamerica, South America</div>
+                            </div>
+
+                            <div class="pets-slider-item meet-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/cheetahs.jpg" alt="cheetahs">
+                                    <div class="slider__photo__item__text">
+                                        <h4>The cheetahs</h4>
+                                        <p>Here we have cheetahs living in Africa</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Cheetahs<br></div>
+                                <div class="fav-description">Native to Africa</div>
+                            </div>
+
+                            <div class="pets-slider-item meet-icon">
+                                <div class="slider__photo__item">
+                                    <img class="slider__photo" src="../../assets/images/penguins.jpg" alt="penguins">
+                                    <div class="slider__photo__item__text">
+                                        <h4>The Penguins</h4>
+                                        <p>Here we have Penguins living in Antarctica</p>
+                                    </div>
+                                </div>
+                                <div class="fav-title">Penguins<br></div>
+                                <div class="fav-description">Native to Antarctica</div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+            <div class="btn-choose-container"><button class="button btn-choose"><span class="button-style">Choose Your Favorite</span></button></div>
+
             </section>
 
 
@@ -220,6 +401,7 @@
             <div class="container">
                 <h3 class="testimonials-style">Testimonials</h3>
                 <div class="block-testimonials">
+                    <div class="testimonials-line">
                     <div class="item-testimonials">
                         <div class="content-testimonials">
                             <div class="profile">
@@ -239,7 +421,7 @@
                     <div class="item-testimonials">
                         <div class="content-testimonials">
                             <div class="profile">
-                                <div class="avatar avatar01"></div>
+                                <div class="avatar avatar04"></div>
                                 <div class="profile_info">
                                     <div class="name">Oskar Samborsky</div>
                                     <span class="local">Local Austria</span>
@@ -288,11 +470,133 @@
                     </div>
                 </div>
 
+                <div class="item-testimonials">
+                    <div class="content-testimonials">
+                        <div class="profile">
+                            <div class="avatar avatar00"></div>
+                            <div class="profile_info">
+                                <div class="name">Tony Corleone</div>
+                                <span class="local">Local Austria</span>
+                                <span class="marker">&bull;</span>
+                                <span class="time">Today</span>
+                            </div>
+                        </div>
+                        <div class="text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        </div>
+                    </div>
                 </div>
+                <div class="item-testimonials">
+                    <div class="content-testimonials">
+                        <div class="profile">
+                            <div class="avatar avatar05"></div>
+                            <div class="profile_info">
+                                <div class="name">Gennadiy Zuganov</div>
+                                <span class="local">Local Russia</span>
+                                <span class="marker">&bull;</span>
+                                <span class="time">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="text">Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. 
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
 
-                <input class="testimonials__range" type="range" step="1" name="range" min="0" max="100" value="1">
-                
-                <div class="scroller"><div class="scroll-line"></div></div>
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item-testimonials">
+                    <div class="content-testimonials">
+                        <div class="profile">
+                            <div class="avatar avatar06"></div>
+                            <div class="profile_info">
+                                <div class="name">Joe Biden</div>
+                                <span class="local">America</span>
+                                <span class="marker">&bull;</span>
+                                <span class="time">Today</span>
+                            </div>
+                        </div>
+                        <div class="text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                            The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-testimonials"><div class="content-testimonials">
+                    <div class="profile">
+                        <div class="avatar avatar07"></div>
+                            <div class="profile_info">
+                                <div class="name">Martin Scorsese</div>
+                                <span class="local">America</span>
+                                <span class="marker">&bull;</span>
+                                <span class="time">Today</span>
+                            </div>
+                    </div>
+                    <div class="text">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.                            
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-testimonials">
+                <div class="content-testimonials">
+                    <div class="profile">
+                        <div class="avatar avatar00"></div>
+                        <div class="profile_info">
+                            <div class="name">Michael John</div>
+                            <span class="local">Local Austria</span>
+                            <span class="marker">&bull;</span>
+                            <span class="time">Today</span>
+                        </div>
+                    </div>
+                    <div class="text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                    The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                    </div>
+                </div>
+            </div>
+            <div class="item-testimonials">
+                <div class="content-testimonials">
+                    <div class="profile">
+                        <div class="avatar avatar01"></div>
+                        <div class="profile_info">
+                            <div class="name">Oskar Samborsky</div>
+                            <span class="local">Local Austria</span>
+                            <span class="marker">&bull;</span>
+                            <span class="time">Yesterday</span>
+                        </div>
+                    </div>
+                    <div class="text">Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. 
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item-testimonials">
+                <div class="content-testimonials">
+                    <div class="profile">
+                        <div class="avatar avatar02"></div>
+                        <div class="profile_info">
+                            <div class="name">Fredericka Michelin</div>
+                            <span class="local">Local Austria</span>
+                            <span class="marker">&bull;</span>
+                            <span class="time">Today</span>
+                        </div>
+                    </div>
+                    <div class="text">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met.
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <input class="testimonials__range" type="range" step="1" name="range" min="0" max="7" value="0">
+                <div class="testimonials-popup">
+                    <div class="popup-bg active"></div>
+                </div>
                 <div class="btn-feedback">
                     <button class="button square-border btn-feedback-padding"><span class="button-style">Leave Feedback</span></button>
                 </div>
@@ -329,11 +633,11 @@
                         <div class="media-item_icon_solo"><a href="youtube.com" class="media-style"><div class="icon icon_youtube"></div></a></div>
                     </div>
                 <div class="footer-nav">
-                    <ul class="nav-items nav-items-footer">
-                        <li><a class="nav-item nav-item-footer active" href="./pages/main/index.html">About</a></li>
-                        <li><a class="nav-item nav-item-footer" href="#">Map</a></li>
-                        <li><a class="nav-item nav-item-footer" href="#">Zoos</a></li>
-                        <li><a class="nav-item nav-item-footer" href="#">Contact us</a></li>
+                    <ul class="nav-items-footer">
+                        <li><a class="nav-item-footer active" href="./pages/main/index.html">About</a></li>
+                        <li><a class="nav-item-footer" href="#">Map</a></li>
+                        <li><a class="nav-item-footer" href="#">Zoos</a></li>
+                        <li><a class="nav-item-footer" href="#">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="designedby">
@@ -344,5 +648,6 @@
             </div>
         </footer>
     </div>
+    <script defer src="./index.js"></script>
 </body>
 </html>
